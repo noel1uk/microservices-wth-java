@@ -1,4 +1,4 @@
-package model;
+package chapter2.model;
 
 import java.util.List;
 

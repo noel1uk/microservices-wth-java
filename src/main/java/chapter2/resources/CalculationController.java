@@ -1,6 +1,6 @@
-package resources;
+package chapter2.resources;
 
-import model.Calculation;
+import chapter2.model.Calculation;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -33,7 +33,7 @@ public class CalculationController {
         return new Calculation(input, output, "power");
     }
 
-    @RequestMapping(value = "/sqrt/{value:.+", method = GET)
+    @RequestMapping(value = "/sqrt/{value:.+}", method = GET)
     public Calculation sqrt(@PathVariable(value = "value") String aValue) {
         List<String> input = new ArrayList();
         input.add(aValue);
